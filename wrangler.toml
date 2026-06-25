@@ -1,0 +1,8 @@
+name = "qunke-website"
+compatibility_date = "2026-06-25"
+
+[build]
+command = "npm run build"
+
+[assets]
+directory = "./dist"

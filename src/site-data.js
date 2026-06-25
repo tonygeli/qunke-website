@@ -2,8 +2,8 @@ export const site = {
   brand: "Qunke",
   name: "Qunke Woven Bag Machinery Sourcing",
   url: "https://qunke-machinery.com",
-  email: "sales@qunke-machinery.com",
-  whatsapp: "+86 000 0000 0000",
+  email: "tonygeli@163.com",
+  whatsapp: "+86 16602168211",
   address: "China plastic packaging machinery supplier network",
   description:
     "Qunke helps overseas buyers submit RFQs and compare China suppliers for PP woven bag, sack, tape extrusion, circular loom, laminating, printing and bag conversion machinery.",

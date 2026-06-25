@@ -21,6 +21,16 @@ Build output directory: dist
 Production branch: main
 ```
 
+## Deploy To Cloudflare Workers Static Assets
+
+This repository also includes `wrangler.toml`, so Cloudflare can deploy it with:
+
+```bash
+npx wrangler deploy
+```
+
+Wrangler will run `npm run build` and upload the generated `dist` directory.
+
 ## Deploy To GitHub Pages
 
 This repository does not include a GitHub Actions workflow by default, so it can be pushed with a token that does not have the `workflow` scope. For GitHub Pages, either add a Pages workflow later with a token that includes `workflow`, or deploy the generated `dist` output through another static hosting workflow.
