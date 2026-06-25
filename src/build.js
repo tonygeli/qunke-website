@@ -93,11 +93,11 @@ function footer(root) {
         </div>
         <div class="footer-links">
           <div>
-            <h3>Products</h3>
+            <h3>Machines</h3>
             ${productLinks}
           </div>
           <div>
-            <h3>Solutions</h3>
+            <h3>Applications</h3>
             ${solutionLinks}
           </div>
           <div>
@@ -109,7 +109,7 @@ function footer(root) {
         </div>
       </div>
       <div class="copyright">
-        <div class="section-inner">© <span data-year></span> ${site.name}. Built for overseas plastic recycling and extrusion buyers.</div>
+        <div class="section-inner">© <span data-year></span> ${site.name}. Built for overseas PP woven bag machinery buyers and China suppliers.</div>
       </div>
     </footer>`;
 }
@@ -171,7 +171,7 @@ function productCard(product, root = "") {
       <span class="kicker">${escapeHtml(product.kicker)}</span>
       <h3>${escapeHtml(product.name)}</h3>
       <p>${escapeHtml(product.description)}</p>
-      <a class="link" href="${root}products/${product.slug}/">View machine -></a>
+      <a class="link" href="${root}products/${product.slug}/">Compare suppliers -></a>
     </article>`;
 }
 
@@ -181,7 +181,7 @@ function solutionCard(solution, root = "") {
       <span class="kicker">Solution</span>
       <h3>${escapeHtml(solution.name)}</h3>
       <p>${escapeHtml(solution.description)}</p>
-      <a class="link" href="${root}solutions/${solution.slug}/">Explore solution -></a>
+      <a class="link" href="${root}solutions/${solution.slug}/">View application -></a>
     </article>`;
 }
 
@@ -207,14 +207,14 @@ function faqBlock() {
 function homePage() {
   const body = `
     <section class="hero">
-      <img src="${site.heroImage}" alt="Qunke plastic recycling and extrusion machinery production line">
+      <img src="${site.heroImage}" alt="Qunke PP woven bag machinery supplier matching platform">
       <div class="hero-content">
-        <p class="eyebrow">Plastic recycling and extrusion machinery</p>
-        <h1>Qunke Plastic Recycling & Extrusion Machinery</h1>
-        <p class="hero-lede">Washing, crushing, pelletizing and pipe extrusion lines for overseas buyers who need practical machine configuration, factory testing and clear technical communication.</p>
+        <p class="eyebrow">PP woven bag machinery supplier finder</p>
+        <h1>Compare China PP Woven Bag Machine Suppliers</h1>
+        <p class="hero-lede">Submit one RFQ for tape extrusion lines, circular looms, laminating, printing, cutting and sewing, valve bag and FIBC machinery from China suppliers.</p>
         <div class="cta-row">
-          <a class="button primary" href="contact/">Request a Quote</a>
-          <a class="button secondary" href="products/">View Products</a>
+          <a class="button primary" href="contact/">Post Your RFQ</a>
+          <a class="button secondary" href="for-suppliers/">For Suppliers</a>
         </div>
       </div>
     </section>
@@ -222,8 +222,8 @@ function homePage() {
     <section class="section">
       <div class="section-inner">
         <div class="section-head">
-          <h2>Core machinery for recycling and extrusion projects.</h2>
-          <p>Build your first quotation around material type, contamination level, factory space and final product target.</p>
+          <h2>Machine categories for woven sack factories.</h2>
+          <p>Start with the equipment category, final bag type and output target, then compare relevant China suppliers.</p>
         </div>
         <div class="grid products">${products.slice(0, 8).map((product) => productCard(product)).join("")}</div>
       </div>
@@ -232,10 +232,10 @@ function homePage() {
     <section class="section tint">
       <div class="section-inner">
         <div class="stats-band">
-          <div class="stat"><strong>PET</strong><span>Bottle washing and flake preparation</span></div>
-          <div class="stat"><strong>PP PE</strong><span>Film washing and pelletizing</span></div>
-          <div class="stat"><strong>PVC</strong><span>Pipe extrusion line planning</span></div>
-          <div class="stat"><strong>HDPE</strong><span>Pipe and rigid plastic processing</span></div>
+          <div class="stat"><strong>RFQ</strong><span>Buyer requirements organized by machine type</span></div>
+          <div class="stat"><strong>PP</strong><span>Woven bag, sack and tape production</span></div>
+          <div class="stat"><strong>BOPP</strong><span>Laminated packaging bag projects</span></div>
+          <div class="stat"><strong>FIBC</strong><span>Jumbo bag and industrial packaging lines</span></div>
         </div>
       </div>
     </section>
@@ -244,7 +244,7 @@ function homePage() {
       <div class="section-inner">
         <div class="section-head">
           <h2>Buyer scenarios Qunke is built around.</h2>
-          <p>Overseas buyers often start with incomplete material information. Qunke pages are organized to help turn that early inquiry into a workable machine proposal.</p>
+          <p>Overseas buyers can submit a simple RFQ first. Relevant China suppliers handle the detailed machine configuration and quotation.</p>
         </div>
         <div class="grid three">
           ${buyerScenarios
@@ -264,8 +264,8 @@ function homePage() {
     <section class="section tint">
       <div class="section-inner">
         <div class="section-head">
-          <h2>Solutions by material and final output.</h2>
-          <p>Each solution connects the material problem with the right washing, drying, pelletizing or extrusion route.</p>
+          <h2>Applications by final bag product.</h2>
+          <p>Each application page translates the final packaging product into likely machine categories and supplier matching notes.</p>
         </div>
         <div class="grid two">${solutions.map((solution) => solutionCard(solution)).join("")}</div>
       </div>
@@ -276,20 +276,20 @@ function homePage() {
         <div class="content-split">
           <div>
             <p class="eyebrow">RFQ workflow</p>
-            <h2>Start with material evidence, not a generic machine list.</h2>
-            <p class="page-lede">A useful quotation begins with your material photo or video, capacity target, local voltage, factory space and final product requirement.</p>
+            <h2>Post one RFQ, then compare supplier responses.</h2>
+            <p class="page-lede">You do not need to write a perfect technical specification. Start with bag type, size, target output, country and contact details.</p>
           </div>
           <div class="panel">
             <h3>Send first</h3>
-            ${list(["Material type and contamination level", "Target output per hour or per day", "Final product: flakes, pellets or pipe", "Workshop size and voltage", "Destination country and port"])}
-            <a class="button primary" style="margin-top:20px" href="contact/">Send RFQ</a>
+            ${list(["Bag type and sample photo", "Machine category or complete line request", "Bag width, length and fabric GSM if known", "Target output and destination country", "Email or WhatsApp for supplier replies"])}
+            <a class="button primary" style="margin-top:20px" href="contact/">Post RFQ</a>
           </div>
         </div>
       </div>
     </section>`;
 
   writePage("index.html", {
-    title: "Qunke Plastic Recycling & Extrusion Machinery",
+    title: "Qunke PP Woven Bag Machinery Supplier Finder",
     description: site.description,
     body,
     schema: [
@@ -306,7 +306,7 @@ function homePage() {
 
 function productsIndex() {
   const body = `
-    ${pageHero("Plastic Recycling and Extrusion Machinery", "Explore Qunke machinery for washing, crushing, pelletizing and pipe extrusion projects.", "Products")}
+    ${pageHero("PP Woven Bag Machinery Categories", "Compare China suppliers for PP tape extrusion, circular loom, laminating, printing, cutting sewing, cement valve bag and FIBC machinery.", "Machines")}
     <section class="section">
       <div class="section-inner">
         <div class="grid products">${products.map((product) => productCard(product, "../")).join("")}</div>
@@ -314,8 +314,8 @@ function productsIndex() {
     </section>`;
 
   writePage("products/index.html", {
-    title: "Products | Qunke Plastic Machinery",
-    description: "Plastic recycling, washing, pelletizing, crusher and extrusion machinery from Qunke.",
+    title: "PP Woven Bag Machinery Categories | Qunke",
+    description: "Supplier matching pages for PP woven bag, circular loom, tape extrusion, laminating, printing and bag conversion machinery.",
     body
   });
 }
@@ -324,7 +324,7 @@ function productPages() {
   products.forEach((product) => {
     const related = products.filter((item) => item.slug !== product.slug).slice(0, 3);
     const body = `
-      ${pageHero(product.title, product.description, "Products", "../../")}
+      ${pageHero(product.title, product.description, "Machines", "../../")}
       <section class="section">
         <div class="section-inner content-split">
           <article>
@@ -338,7 +338,7 @@ function productPages() {
             </div>
             <div class="panel" style="margin-top:18px">
               <h2>RFQ Notes</h2>
-              <p>Qunke should confirm the final configuration after checking your material condition, target output, factory layout and local electrical standard.</p>
+              <p>Qunke is a supplier matching platform. Submit one clear RFQ, then let relevant China suppliers confirm technical configuration, price, delivery terms and testing support.</p>
             </div>
           </article>
           <aside>
@@ -349,7 +349,7 @@ function productPages() {
             <div class="panel" style="margin-top:18px">
               <h3>Next Step</h3>
               <p>${escapeHtml(product.cta)}</p>
-              <a class="button primary" href="../../contact/">Request quote</a>
+              <a class="button primary" href="../../contact/">Post RFQ</a>
             </div>
           </aside>
         </div>
@@ -358,7 +358,7 @@ function productPages() {
         <div class="section-inner">
           <div class="section-head">
             <h2>Related machinery</h2>
-            <p>Compare the supporting machines that may be part of the same production line.</p>
+            <p>These machine categories often appear in the same woven bag or sack production project.</p>
           </div>
           <div class="grid three">${related.map((item) => productCard(item, "../../")).join("")}</div>
         </div>
@@ -367,7 +367,7 @@ function productPages() {
         <div class="section-inner">
           <div class="section-head">
             <h2>FAQ</h2>
-            <p>Common questions before an overseas machinery quotation.</p>
+            <p>Common questions before submitting a woven bag machinery RFQ.</p>
           </div>
           ${faqBlock()}
         </div>
@@ -380,9 +380,14 @@ function productPages() {
       schema: [
         {
           "@context": "https://schema.org",
-          "@type": "Product",
+          "@type": "Service",
           name: product.name,
-          brand: site.brand,
+          provider: {
+            "@type": "Organization",
+            name: site.name,
+            url: site.url
+          },
+          serviceType: `${product.name} supplier matching`,
           description: product.description
         }
       ]
@@ -392,7 +397,7 @@ function productPages() {
 
 function solutionsIndex() {
   const body = `
-    ${pageHero("Plastic Recycling Solutions by Material", "Choose a process route around PET bottles, PP PE film, agricultural film or turnkey recycling plant planning.", "Solutions")}
+    ${pageHero("Woven Bag Applications", "Choose an application around PP woven bags, cement sacks, BOPP laminated bags or FIBC jumbo bag production.", "Applications")}
     <section class="section">
       <div class="section-inner">
         <div class="grid two">${solutions.map((solution) => solutionCard(solution, "../")).join("")}</div>
@@ -400,8 +405,8 @@ function solutionsIndex() {
     </section>`;
 
   writePage("solutions/index.html", {
-    title: "Solutions | Qunke Plastic Machinery",
-    description: "Plastic recycling solution pages for PET bottle recycling, PP PE film recycling and turnkey recycling plants.",
+    title: "Woven Bag Applications | Qunke",
+    description: "Application pages for PP woven bag, cement bag, BOPP laminated bag and FIBC jumbo bag machinery sourcing.",
     body
   });
 }
@@ -410,7 +415,7 @@ function solutionPages() {
   solutions.forEach((solution) => {
     const machines = solution.links.map(slugToProduct).filter(Boolean);
     const body = `
-      ${pageHero(solution.title, solution.description, "Solutions", "../../")}
+      ${pageHero(solution.title, solution.description, "Applications", "../../")}
       <section class="section">
         <div class="section-inner content-split">
           <div>
@@ -422,8 +427,8 @@ function solutionPages() {
           <aside>
             <div class="panel">
               <h3>Useful for buyers who need</h3>
-              ${list(["Material-specific line planning", "Machine configuration before quotation", "Factory testing before shipment", "Clear spare parts and installation planning"])}
-              <a class="button primary" style="margin-top:20px" href="../../contact/">Send project details</a>
+              ${list(["Supplier matching by final bag type", "Comparable quotes from relevant factories", "Machine test video requirements", "Clear spare parts and installation terms"])}
+              <a class="button primary" style="margin-top:20px" href="../../contact/">Post application RFQ</a>
             </div>
           </aside>
         </div>
@@ -431,8 +436,8 @@ function solutionPages() {
       <section class="section tint">
         <div class="section-inner">
           <div class="section-head">
-            <h2>Recommended machines</h2>
-            <p>These machines usually appear in this type of project.</p>
+            <h2>Recommended machine categories</h2>
+            <p>These machines usually appear in this type of woven bag project.</p>
           </div>
           <div class="grid three">${machines.map((product) => productCard(product, "../../")).join("")}</div>
         </div>
@@ -458,7 +463,7 @@ function marketPages() {
           </div>
           <aside class="panel">
             <h3>Send before quotation</h3>
-            ${list(["Material photos or videos", "Target output", "Workshop location and voltage", "Final product requirement", "Destination port"])}
+            ${list(["Final bag photo or drawing", "Machine category or complete line request", "Bag size and output target", "Workshop location and voltage", "Destination port"])}
             <a class="button primary" style="margin-top:20px" href="../../contact/">Contact Qunke</a>
           </aside>
         </div>
@@ -467,7 +472,7 @@ function marketPages() {
         <div class="section-inner">
           <div class="section-head">
             <h2>Machines often requested by ${escapeHtml(market.name)} buyers</h2>
-            <p>Start with a material-specific machine page, then send your project detail for configuration.</p>
+            <p>Start with a machine category, then submit one RFQ for relevant China suppliers to quote.</p>
           </div>
           <div class="grid three">${products.slice(0, 6).map((product) => productCard(product, "../../")).join("")}</div>
         </div>
@@ -483,43 +488,43 @@ function marketPages() {
 
 function supportingPages() {
   writePage("videos/index.html", {
-    title: "Factory Videos and Machine Testing | Qunke",
-    description: "Qunke machine testing and factory video page for overseas plastic machinery buyers.",
+    title: "Machine Videos and Supplier Testing | Qunke",
+    description: "Video page for PP woven bag machinery testing, circular loom running, tape extrusion, bag conversion and supplier verification.",
     body: `
-      ${pageHero("Factory Videos and Machine Testing", "Add YouTube videos here for machine running tests, factory acceptance tests, loading and product output inspection.", "Videos")}
+      ${pageHero("Machine Videos and Supplier Testing", "Use this page for circular loom running videos, tape extrusion testing, bag conversion lines, loading checks and supplier verification clips.", "Videos")}
       <section class="section">
         <div class="section-inner grid three">
-          <div class="video-box">PET bottle washing line video</div>
-          <div class="video-box">PP PE film pelletizing video</div>
-          <div class="video-box">Pipe extrusion line video</div>
+          <div class="video-box">PP tape extrusion line video</div>
+          <div class="video-box">Plastic circular loom video</div>
+          <div class="video-box">Woven bag cutting sewing video</div>
         </div>
       </section>`
   });
 
   writePage("about/index.html", {
-    title: "About Qunke | Plastic Machinery Manufacturer",
-    description: "About Qunke plastic recycling and extrusion machinery manufacturing for overseas buyers.",
+    title: "About Qunke | PP Woven Bag Machinery Supplier Finder",
+    description: "About Qunke, a supplier matching platform for overseas buyers sourcing PP woven bag machinery from China.",
     body: `
-      ${pageHero("About Qunke", "Qunke is positioned as a China-based plastic machinery brand focused on practical recycling and extrusion line configuration for overseas buyers.", "About")}
+      ${pageHero("About Qunke", "Qunke is positioned as a focused RFQ and supplier matching platform for PP woven bag, sack and plastic packaging machinery.", "About")}
       <section class="section">
         <div class="section-inner content-split">
           <div>
-            <h2>Built around real materials and clear communication.</h2>
-            <p class="page-lede">The website is structured for buyers who need to compare machine routes before investing in PET washing, film washing, pelletizing, crushing or pipe extrusion equipment.</p>
+            <h2>Built for buyers who need supplier options, not a fake factory story.</h2>
+            <p class="page-lede">Qunke helps overseas buyers submit RFQs for PP woven bag machinery and routes those requests to relevant China suppliers for quotation and follow-up.</p>
           </div>
           <aside class="panel">
             <h3>What to verify before launch</h3>
-            ${list(["Factory photos", "Actual address", "Business license details", "Machine test videos", "Export case references", "Service process"])}
+            ${list(["Supplier qualification process", "RFQ forwarding rules", "Privacy and buyer consent text", "Supplier response standards", "Machine category coverage", "Paid lead policy"])}
           </aside>
         </div>
       </section>`
   });
 
   writePage("case-studies/index.html", {
-    title: "Application Examples | Qunke Plastic Machinery",
-    description: "Application examples for Qunke plastic recycling machinery buyers by material, output and factory situation.",
+    title: "RFQ Examples | Qunke Woven Bag Machinery",
+    description: "Example RFQ scenarios for PP woven bag machinery buyers by bag type, machine category and factory situation.",
     body: `
-      ${pageHero("Application Examples", "Use this section for verified customer projects after adding real countries, materials, machine configurations and results.", "Case Studies")}
+      ${pageHero("RFQ Examples", "Use this section for verified RFQ examples after adding real buyer countries, bag types, machine categories and supplier response outcomes.", "Case Studies")}
       <section class="section">
         <div class="section-inner grid three">
           ${buyerScenarios
@@ -537,39 +542,72 @@ function supportingPages() {
   });
 
   writePage("blog/index.html", {
-    title: "Plastic Machinery Buying Guides | Qunke",
-    description: "Buying guides for overseas plastic recycling and extrusion machinery buyers.",
+    title: "PP Woven Bag Machinery Buying Guides | Qunke",
+    description: "Buying guides for overseas buyers comparing China suppliers for PP woven bag machinery.",
     body: `
-      ${pageHero("Plastic Machinery Buying Guides", "Technical and commercial notes for overseas buyers comparing recycling and extrusion machinery.", "Guides")}
+      ${pageHero("PP Woven Bag Machinery Buying Guides", "Practical notes for buyers comparing tape extrusion, circular loom, laminating, printing and bag conversion suppliers.", "Guides")}
       <section class="section">
         <div class="section-inner grid two">
           <article class="card">
-            <span class="kicker">Price guide</span>
-            <h3>Plastic Recycling Machine Price Guide</h3>
-            <p>Understand the main factors that change quotation scope, including material contamination, capacity, washing stages, drying target and pelletizing route.</p>
-            <a class="link" href="plastic-recycling-machine-price-guide/">Read guide -></a>
+            <span class="kicker">RFQ guide</span>
+            <h3>PP Woven Bag Machine RFQ Guide</h3>
+            <p>Understand the information suppliers need before quoting, including bag type, size, fabric GSM, output, voltage and machine category.</p>
+            <a class="link" href="pp-woven-bag-machine-rfq-guide/">Read guide -></a>
           </article>
         </div>
       </section>`
   });
 
-  writePage("blog/plastic-recycling-machine-price-guide/index.html", {
-    title: "Plastic Recycling Machine Price Guide | Qunke",
-    description: "A practical price guide for overseas buyers comparing plastic recycling machine quotations.",
+  writePage("blog/pp-woven-bag-machine-rfq-guide/index.html", {
+    title: "PP Woven Bag Machine RFQ Guide | Qunke",
+    description: "A practical RFQ guide for overseas buyers comparing PP woven bag machine suppliers from China.",
     body: `
-      ${pageHero("Plastic Recycling Machine Price Guide", "A reliable quotation depends on material condition, output target, final product and line scope.", "Guide", "../../")}
+      ${pageHero("PP Woven Bag Machine RFQ Guide", "A useful supplier response depends on bag type, machine category, output target and clear contact information.", "Guide", "../../")}
       <section class="section">
         <div class="section-inner content-split">
           <article class="panel">
-            <h2>What changes the price?</h2>
-            ${list(["Material type and contamination level", "Target output and operation hours", "Washing stages and drying target", "Single machine or complete line scope", "Electrical standard and control configuration", "Testing, packing, shipment and installation support"])}
-            <p style="margin-top:18px">Avoid comparing only the machine name. A PET bottle washing line and a film washing line can have very different layouts, water usage, drying systems and final product targets.</p>
+            <h2>What should be in your RFQ?</h2>
+            ${list(["Final bag type: cement, rice, feed, fertilizer, BOPP laminated or FIBC", "Machine category: tape line, circular loom, laminating, printing or cutting sewing", "Bag width, length, fabric GSM and printing colors if known", "Target output per hour, day or month", "Local voltage, workshop space and destination port", "Supplier requirements: test video, spare parts, installation and warranty"])}
+            <p style="margin-top:18px">Avoid sending only a machine name. A supplier needs the final bag specification to quote the right line configuration and auxiliary equipment.</p>
           </article>
           <aside class="panel">
-            <h3>Get a better quote</h3>
-            <p>Send your material photo, expected capacity and final product requirement before asking for price.</p>
-            <a class="button primary" href="../../contact/">Send RFQ</a>
+            <h3>Get better supplier replies</h3>
+            <p>Attach a bag sample photo or drawing and list the machine category you want to compare.</p>
+            <a class="button primary" href="../../contact/">Post RFQ</a>
           </aside>
+        </div>
+      </section>`
+  });
+
+  writePage("for-suppliers/index.html", {
+    title: "For China PP Woven Bag Machinery Suppliers | Qunke",
+    description: "China suppliers can join Qunke to receive relevant overseas RFQs for PP woven bag, sack and plastic packaging machinery.",
+    body: `
+      ${pageHero("For China Suppliers", "Receive relevant overseas RFQs for PP woven bag, circular loom, tape extrusion, laminating, printing and bag conversion machinery.", "For Suppliers")}
+      <section class="section">
+        <div class="section-inner content-split">
+          <div>
+            <h2>Qunke is built to match focused RFQs with capable suppliers.</h2>
+            <p class="page-lede">The early model is simple: buyers submit machine requirements, Qunke filters the RFQ, then suitable suppliers can respond with quotation and technical follow-up.</p>
+          </div>
+          <aside class="panel">
+            <h3>Supplier categories</h3>
+            ${list(["PP tape extrusion line manufacturers", "Circular loom and weaving machine suppliers", "Woven bag cutting sewing machine suppliers", "Laminating and printing machine suppliers", "Cement valve bag and FIBC equipment suppliers"])}
+            <a class="button primary" style="margin-top:20px" href="../contact/">Apply as supplier</a>
+          </aside>
+        </div>
+      </section>
+      <section class="section tint">
+        <div class="section-inner">
+          <div class="section-head">
+            <h2>How supplier cooperation can work.</h2>
+            <p>Start with manual matching and pay-per-valid-RFQ. Membership and featured listings can be added after traffic is proven.</p>
+          </div>
+          <div class="grid three">
+            <article class="card"><span class="kicker">Step 1</span><h3>Supplier profile</h3><p>Share machine categories, export markets, videos, certifications and response contacts.</p></article>
+            <article class="card"><span class="kicker">Step 2</span><h3>RFQ matching</h3><p>Receive buyer requests that match your machine category and destination market capability.</p></article>
+            <article class="card"><span class="kicker">Step 3</span><h3>Lead pricing</h3><p>Use pay-per-valid-RFQ first, then upgrade to category listing or featured supplier placement later.</p></article>
+          </div>
         </div>
       </section>`
   });
@@ -577,38 +615,43 @@ function supportingPages() {
 
 function contactPage() {
   const body = `
-    ${pageHero("Contact Qunke", "Send your material information, target output and country to start a practical machine proposal.", "Contact")}
+    ${pageHero("Post Your RFQ", "Send your bag type, machine category, output target and country. Qunke can organize the request for China supplier matching.", "Post RFQ")}
     <section class="section">
       <div class="section-inner content-split">
         <form class="panel form" action="mailto:${site.email}" method="post" enctype="text/plain">
           <label>Name<input name="name" autocomplete="name" required></label>
           <label>Country<input name="country" autocomplete="country-name" required></label>
-          <label>Material
-            <select name="material">
-              <option>PET bottles</option>
-              <option>PP PE film</option>
-              <option>Plastic scrap</option>
-              <option>PVC pipe</option>
-              <option>HDPE pipe</option>
+          <label>Machine category
+            <select name="machine-category">
+              <option>Complete PP woven bag production line</option>
+              <option>PP tape extrusion line</option>
+              <option>Plastic circular loom</option>
+              <option>Woven bag cutting sewing machine</option>
+              <option>BOPP / PP laminating machine</option>
+              <option>Flexo printing machine</option>
+              <option>Cement valve bag machine</option>
+              <option>FIBC jumbo bag machine</option>
+              <option>Auxiliary woven bag machines</option>
             </select>
           </label>
-          <label>Capacity target<input name="capacity" placeholder="Example: kg/h or tons/day"></label>
+          <label>Bag type<input name="bag-type" placeholder="Example: cement bag, rice bag, feed bag, FIBC"></label>
+          <label>Output target<input name="output" placeholder="Example: bags/day, rolls/day, looms quantity"></label>
           <label>Email or WhatsApp<input name="contact" required></label>
-          <label>Project details<textarea name="message" placeholder="Material condition, final product, factory space, voltage and destination port"></textarea></label>
-          <button class="button primary" type="submit">Send RFQ</button>
+          <label>Project details<textarea name="message" placeholder="Bag size, fabric GSM, printing colors, voltage, factory space, destination port and supplier requirements"></textarea></label>
+          <button class="button primary" type="submit">Post RFQ</button>
         </form>
         <aside class="panel">
           <h2>Contact details</h2>
           ${list([`Email: ${site.email}`, `WhatsApp: ${site.whatsapp}`, `Address: ${site.address}`])}
           <h3 style="margin-top:26px">Useful attachments</h3>
-          ${list(["Material photos", "Material running video", "Factory layout", "Target final product photo", "Current machine list if upgrading"])}
+          ${list(["Final bag sample photo", "Bag drawing or size sheet", "Current machine list if upgrading", "Factory layout", "Target supplier response deadline"])}
         </aside>
       </div>
     </section>`;
 
   writePage("contact/index.html", {
-    title: "Contact Qunke | Request Plastic Machinery Quote",
-    description: "Contact Qunke to request a quotation for plastic recycling, washing, pelletizing, crushing or pipe extrusion machinery.",
+    title: "Post RFQ | Qunke PP Woven Bag Machinery",
+    description: "Submit an RFQ for PP woven bag, circular loom, tape extrusion, laminating, printing, valve bag or FIBC machinery supplier matching.",
     body
   });
 }

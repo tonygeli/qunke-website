@@ -1,167 +1,167 @@
 export const site = {
   brand: "Qunke",
-  name: "Qunke Plastic Machinery",
+  name: "Qunke Woven Bag Machinery Sourcing",
   url: "https://qunke-machinery.com",
   email: "sales@qunke-machinery.com",
   whatsapp: "+86 000 0000 0000",
-  address: "China plastic machinery manufacturing base",
+  address: "China plastic packaging machinery supplier network",
   description:
-    "Qunke builds plastic recycling, pelletizing, washing, crushing and pipe extrusion machinery for overseas factory buyers.",
-  heroImage: "assets/images/qunke-plastic-machinery-hero.png"
+    "Qunke helps overseas buyers submit RFQs and compare China suppliers for PP woven bag, sack, tape extrusion, circular loom, laminating, printing and bag conversion machinery.",
+  heroImage: "assets/images/qunke-woven-bag-machinery-hero.png"
 };
 
 export const nav = [
-  ["Products", "products/"],
-  ["Solutions", "solutions/"],
+  ["Machines", "products/"],
+  ["Applications", "solutions/"],
   ["Markets", "markets/indonesia/"],
-  ["Videos", "videos/"],
-  ["About", "about/"],
-  ["Contact", "contact/"]
+  ["For Suppliers", "for-suppliers/"],
+  ["Guides", "blog/"],
+  ["Post RFQ", "contact/"]
 ];
 
 export const products = [
   {
-    slug: "plastic-recycling-machine",
-    name: "Plastic Recycling Machine",
-    kicker: "Turnkey recycling lines",
-    title: "Plastic Recycling Machine Manufacturer in China",
+    slug: "pp-tape-extrusion-line",
+    name: "PP Tape Extrusion Line",
+    kicker: "Tape extrusion",
+    title: "PP Tape Extrusion Line Suppliers from China",
     description:
-      "Modular recycling lines for PET bottles, PP PE film, woven bags, rigid plastics and mixed post-industrial plastic waste.",
-    materials: ["PET bottles", "PP PE film", "HDPE bottles", "Woven bags", "Rigid plastics"],
-    process: ["Sorting", "Crushing", "Washing", "Dewatering", "Drying", "Pelletizing or packing"],
+      "Compare China suppliers for PP and HDPE flat yarn tape extrusion lines used before circular weaving and woven sack production.",
+    materials: ["PP granules", "HDPE granules", "Masterbatch", "Recycled PP blend after testing"],
+    process: ["Material dosing", "Extrusion", "Film cooling", "Slitting", "Stretching", "Annealing", "Winding"],
     buyerFit:
-      "Best for recycling plants, plastic processors and investors who need one supplier to design the full line from input material to final flakes or pellets.",
-    cta: "Send us your material photo and target output."
+      "For buyers building or upgrading woven sack factories that need flat yarn production before circular loom weaving.",
+    cta: "Send tape denier, line speed, yarn width and target bag application."
   },
   {
-    slug: "pet-bottle-washing-line",
-    name: "PET Bottle Washing Line",
-    kicker: "Bottle to clean flakes",
-    title: "PET Bottle Washing Line for Clean Bottle Flakes",
+    slug: "plastic-circular-loom",
+    name: "Plastic Circular Loom",
+    kicker: "Weaving",
+    title: "Plastic Circular Loom for PP Woven Fabric Production",
     description:
-      "Washing, label removal, crushing, hot washing, friction washing and drying modules for PET bottle recycling plants.",
-    materials: ["Baled PET bottles", "Loose PET bottles", "Post-consumer PET containers"],
-    process: ["Debaling", "Label removing", "Manual sorting", "Crushing", "Hot washing", "Rinsing", "Dewatering", "Drying"],
+      "Find circular loom suppliers for PP woven fabric, woven sack cloth, tarpaulin fabric and packaging material production.",
+    materials: ["PP flat yarn", "HDPE flat yarn", "Laminated fabric yarn", "Woven sack tape"],
+    process: ["Yarn feeding", "Circular weaving", "Fabric take-up", "Roll winding", "Quality inspection"],
     buyerFit:
-      "Built for buyers who need clean PET flakes for fiber, sheet, strapping or further pelletizing.",
-    cta: "Request a PET washing layout."
+      "For factories producing PP woven fabric rolls for cement bags, rice bags, feed bags, fertilizer bags and laminated sacks.",
+    cta: "Share fabric width, shuttle count, loom quantity and target output."
   },
   {
-    slug: "pp-pe-film-washing-line",
-    name: "PP PE Film Washing Line",
-    kicker: "Film washing",
-    title: "PP PE Film Washing Line for Post-Consumer Film",
+    slug: "woven-bag-cutting-sewing-machine",
+    name: "Woven Bag Cutting Sewing Machine",
+    kicker: "Bag conversion",
+    title: "PP Woven Bag Cutting and Sewing Machine Suppliers",
     description:
-      "A washing line designed for agricultural film, packaging film, bags and soft plastic materials with high moisture and contamination.",
-    materials: ["LDPE film", "LLDPE film", "PP bags", "Agricultural film", "Packaging film"],
-    process: ["Shredding", "Friction washing", "Floating washing", "Dewatering", "Thermal drying", "Silo storage"],
+      "Compare suppliers for automatic woven sack cutting, sewing, bottom stitching and bag conversion lines.",
+    materials: ["PP woven fabric roll", "Laminated woven fabric", "BOPP laminated fabric", "Inner liner bag material"],
+    process: ["Roll feeding", "Length measuring", "Cutting", "Folding", "Bottom sewing", "Counting", "Stacking"],
     buyerFit:
-      "Useful for recyclers handling dirty film and needing a stable feedstock for pelletizing.",
-    cta: "Share your film contamination level."
+      "For bag factories converting woven fabric rolls into rice bags, feed bags, flour bags, fertilizer bags and shopping sacks.",
+    cta: "Send bag width, bag length, sewing type and daily output target."
   },
   {
-    slug: "plastic-pelletizing-machine",
-    name: "Plastic Pelletizing Machine",
-    kicker: "Flakes to pellets",
-    title: "Plastic Pelletizing Machine for Recycling Plants",
+    slug: "bopp-laminating-machine",
+    name: "BOPP / PP Laminating Machine",
+    kicker: "Lamination",
+    title: "BOPP and PP Woven Bag Laminating Machine",
     description:
-      "Pelletizing systems for washed flakes, film, rigid regrind and production scrap with feeding, extrusion, filtration and cutting modules.",
-    materials: ["PP film", "PE film", "HDPE regrind", "LDPE scrap", "Washed flakes"],
-    process: ["Feeding", "Compacting", "Extrusion", "Melt filtration", "Degassing", "Pellet cutting", "Cooling"],
+      "Source extrusion coating and laminating machines for BOPP laminated woven bags, cement sacks and printed packaging bags.",
+    materials: ["PP woven fabric", "BOPP film", "Kraft paper", "PE coating material", "Printed woven fabric"],
+    process: ["Unwinding", "Extrusion coating", "Film lamination", "Cooling", "Edge trimming", "Rewinding"],
     buyerFit:
-      "Designed for factories turning plastic waste into reusable pellets for injection, extrusion or film blowing.",
-    cta: "Get a pelletizing configuration."
+      "For buyers making higher-value printed sacks, laminated feed bags, rice bags, pet food bags or cement packaging.",
+    cta: "Send fabric width, coating weight, layer structure and target product."
   },
   {
-    slug: "pp-pe-film-pelletizing-line",
-    name: "PP PE Film Pelletizing Line",
-    kicker: "Soft plastic pelletizing",
-    title: "PP PE Film Pelletizing Line for Washed Film",
+    slug: "flexo-printing-machine",
+    name: "Flexo Printing Machine",
+    kicker: "Printing",
+    title: "Flexo Printing Machine for PP Woven Bags",
     description:
-      "A film recycling pelletizing line with compactor feeding, single or double stage extrusion, screen changing and strand or water-ring cutting.",
-    materials: ["Washed LDPE film", "PP woven bag", "PE packaging film", "Factory film scrap"],
-    process: ["Compactor feeding", "Extrusion", "Degassing", "Filtration", "Pellet cutting", "Cooling", "Bagging"],
+      "Find flexographic printing machine suppliers for PP woven sacks, roll-to-roll packaging, cement bags and food packaging bags.",
+    materials: ["PP woven fabric", "Laminated woven fabric", "Paper laminated fabric", "Film rolls"],
+    process: ["Roll feeding", "Ink transfer", "Multi-color printing", "Drying", "Inspection", "Rewinding"],
     buyerFit:
-      "A practical match for buyers who already wash film and want stable recycled pellets.",
-    cta: "Send your film type and moisture level."
+      "For factories adding brand printing to woven sack, laminated bag and packaging roll production.",
+    cta: "Send printing colors, width, material and required speed."
   },
   {
-    slug: "plastic-crusher-machine",
-    name: "Plastic Crusher Machine",
-    kicker: "Size reduction",
-    title: "Plastic Crusher Machine for Bottles, Film and Rigid Plastics",
+    slug: "cement-valve-bag-machine",
+    name: "Cement Valve Bag Machine",
+    kicker: "Valve bags",
+    title: "Cement Valve Bag Making Machine Suppliers",
     description:
-      "Crushing equipment for plastic recycling lines, production scrap recovery and pre-processing before washing or pelletizing.",
-    materials: ["PET bottles", "HDPE containers", "PP sheets", "Plastic lumps", "Film scrap"],
-    process: ["Feeding", "Cutting", "Screen sizing", "Discharge", "Dust control"],
+      "Compare suppliers for valve bag converting machinery used in cement, powder, chemical and construction material packaging.",
+    materials: ["Laminated PP woven fabric", "Paper laminated woven fabric", "Tubular woven fabric", "Valve patch material"],
+    process: ["Roll feeding", "Cutting", "Valve forming", "Bottom folding", "Sealing or sewing", "Stacking"],
     buyerFit:
-      "Used by recyclers and factories that need controlled particle size before washing or extrusion.",
-    cta: "Ask for blade and screen recommendations."
+      "For cement bag and powder packaging factories that need valve bag conversion equipment.",
+    cta: "Send valve bag size, fabric type, closing method and output target."
   },
   {
-    slug: "pvc-pipe-extrusion-line",
-    name: "PVC Pipe Extrusion Line",
-    kicker: "Pipe extrusion",
-    title: "PVC Pipe Extrusion Line for Building and Utility Pipe",
+    slug: "fibc-bag-making-machine",
+    name: "FIBC Bag Making Machine",
+    kicker: "Jumbo bags",
+    title: "FIBC Jumbo Bag Making Machine and Cutting Equipment",
     description:
-      "Extrusion lines for PVC pipe production, including extruder, die head, vacuum calibration, haul-off, cutting and stacking.",
-    materials: ["PVC compound", "PVC powder blend", "Recycled PVC blend after testing"],
-    process: ["Mixing", "Extrusion", "Vacuum calibration", "Cooling", "Haul-off", "Cutting", "Stacking"],
+      "Source machines for FIBC jumbo bag fabric cutting, belt cutting, sewing support, panel preparation and big bag production workflows.",
+    materials: ["Heavy PP woven fabric", "FIBC fabric rolls", "Lifting belt tape", "Liner material"],
+    process: ["Fabric roll feeding", "Panel cutting", "Belt cutting", "Marking", "Sewing preparation", "Inspection"],
     buyerFit:
-      "Suitable for pipe factories making drainage, conduit, water supply or building pipe products.",
-    cta: "Tell us your pipe diameter range."
+      "For buyers producing bulk bags, container bags, jumbo bags and industrial packaging sacks.",
+    cta: "Send bag type, panel size, lifting belt requirement and production volume."
   },
   {
-    slug: "hdpe-pipe-extrusion-line",
-    name: "HDPE Pipe Extrusion Line",
-    kicker: "PE pipe production",
-    title: "HDPE Pipe Extrusion Line for Water and Cable Pipe",
+    slug: "auxiliary-woven-bag-machines",
+    name: "Auxiliary Woven Bag Machines",
+    kicker: "Supporting machines",
+    title: "Auxiliary Machines for PP Woven Bag Production",
     description:
-      "HDPE pipe extrusion systems for water pipe, cable duct, irrigation pipe and industrial pipe production.",
-    materials: ["HDPE resin", "PE compound", "Approved recycled PE blend"],
-    process: ["Drying", "Extrusion", "Die forming", "Vacuum sizing", "Cooling", "Haul-off", "Cutting"],
+      "Request suppliers for mixers, crushers, recycling pelletizers, air compressors, winding machines and other supporting equipment.",
+    materials: ["PP scrap", "Woven bag waste", "Flat yarn waste", "Machine-side scrap", "Packaging rolls"],
+    process: ["Material preparation", "Scrap recovery", "Mixing", "Rewinding", "Packing", "Maintenance support"],
     buyerFit:
-      "Built for overseas factories that need reliable pipe production with diameter-specific line design.",
-    cta: "Request a pipe line proposal."
+      "For woven bag factories completing a production line or upgrading supporting machines around the main equipment.",
+    cta: "Send your existing line list and missing auxiliary machines."
   }
 ];
 
 export const solutions = [
   {
-    slug: "pet-bottle-recycling",
-    name: "PET Bottle Recycling",
-    title: "How to Recycle PET Bottles into Clean Flakes",
+    slug: "pp-woven-bag-production-line",
+    name: "PP Woven Bag Production Line",
+    title: "PP Woven Bag Production Line Supplier Matching",
     description:
-      "A complete workflow for turning post-consumer PET bottles into clean flakes through sorting, crushing, hot washing, rinsing and drying.",
-    steps: ["Bottle input analysis", "Label and cap separation", "Crushing and hot washing", "Friction rinsing", "Moisture reduction", "Flake packing or pelletizing"],
-    links: ["pet-bottle-washing-line", "plastic-crusher-machine", "plastic-recycling-machine"]
+      "Submit one RFQ for a complete woven bag plant covering tape extrusion, circular looms, printing, lamination and bag conversion.",
+    steps: ["Bag type confirmation", "Tape extrusion planning", "Circular loom quantity", "Printing and lamination route", "Cutting and sewing setup", "Supplier quotation comparison"],
+    links: ["pp-tape-extrusion-line", "plastic-circular-loom", "woven-bag-cutting-sewing-machine"]
   },
   {
-    slug: "pp-pe-film-recycling",
-    name: "PP PE Film Recycling",
-    title: "PP PE Film Recycling Line for Dirty Soft Plastics",
+    slug: "cement-bag-production-line",
+    name: "Cement Bag Production Line",
+    title: "Cement Bag Making Machine Supplier Matching",
     description:
-      "A washing and pelletizing route for agricultural film, packaging film, woven bags and other soft plastics.",
-    steps: ["Material sorting", "Shredding", "Washing", "Dewatering", "Drying", "Pelletizing"],
-    links: ["pp-pe-film-washing-line", "pp-pe-film-pelletizing-line", "plastic-pelletizing-machine"]
+      "Compare supplier options for cement sack, valve bag and laminated woven bag production projects.",
+    steps: ["Cement bag specification", "Fabric and coating route", "Printing requirement", "Valve bag conversion", "Packing workflow", "Supplier shortlist"],
+    links: ["bopp-laminating-machine", "flexo-printing-machine", "cement-valve-bag-machine"]
   },
   {
-    slug: "agricultural-film-recycling",
-    name: "Agricultural Film Recycling",
-    title: "Plastic Recycling Machine for Agricultural Film",
+    slug: "bopp-laminated-bag-production",
+    name: "BOPP Laminated Bag Production",
+    title: "BOPP Laminated Woven Bag Machine Sourcing",
     description:
-      "A recycling configuration for soil-contaminated agricultural film, greenhouse film and irrigation film waste.",
-    steps: ["Contamination check", "Pre-cutting", "High-friction washing", "Floating washing", "Drying", "Pelletizing test"],
-    links: ["pp-pe-film-washing-line", "pp-pe-film-pelletizing-line"]
+      "Find machines for colorful BOPP laminated rice bags, feed bags, fertilizer bags and retail packaging sacks.",
+    steps: ["Bag artwork and layer structure", "Base fabric planning", "BOPP lamination", "Printing or pre-printed film", "Bag cutting and sewing", "Supplier comparison"],
+    links: ["bopp-laminating-machine", "flexo-printing-machine", "woven-bag-cutting-sewing-machine"]
   },
   {
-    slug: "turnkey-recycling-plant",
-    name: "Turnkey Recycling Plant",
-    title: "Turnkey Plastic Recycling Plant Solution",
+    slug: "fibc-jumbo-bag-production",
+    name: "FIBC Jumbo Bag Production",
+    title: "FIBC Jumbo Bag Machine Supplier Matching",
     description:
-      "Line planning for buyers who need one supplier to coordinate washing, drying, pelletizing, layout and commissioning support.",
-    steps: ["Material sample review", "Output target", "Factory layout", "Equipment selection", "Testing before shipment", "Installation support"],
-    links: ["plastic-recycling-machine", "plastic-pelletizing-machine", "plastic-crusher-machine"]
+      "Request suppliers for big bag and FIBC production equipment, including fabric cutting, belt cutting and sewing support machines.",
+    steps: ["FIBC type review", "Fabric width and GSM", "Panel cutting", "Belt preparation", "Sewing workflow", "Factory setup notes"],
+    links: ["fibc-bag-making-machine", "plastic-circular-loom", "auxiliary-woven-bag-machines"]
   }
 ];
 
@@ -169,56 +169,56 @@ export const markets = [
   {
     slug: "indonesia",
     name: "Indonesia",
-    title: "Plastic Recycling Machine Supplier for Indonesia",
+    title: "PP Woven Bag Machine Suppliers for Indonesia",
     description:
-      "Plastic recycling machinery for Indonesian buyers processing PET bottles, PP PE film, woven bags and rigid plastic waste.",
-    points: ["Common materials include PET bottles and flexible packaging.", "Project planning should consider humidity, power supply and spare parts.", "Send material photos before quotation to avoid oversized or undersized equipment."]
+      "Supplier matching for Indonesian buyers making rice bags, feed bags, fertilizer bags, cement sacks and BOPP laminated woven bags.",
+    points: ["Common projects include rice bag, fertilizer bag and cement sack lines.", "Buyers should confirm local voltage, bag size and target output before comparing suppliers.", "Qunke can route RFQs to relevant China machinery suppliers for quotation."]
   },
   {
     slug: "vietnam",
     name: "Vietnam",
-    title: "Plastic Recycling Machine for Vietnam",
+    title: "Woven Bag Machinery Supplier Matching for Vietnam",
     description:
-      "Recycling and extrusion machinery for Vietnamese processors, traders and factories expanding plastic waste recovery capacity.",
-    points: ["Good fit for PET flakes, PE film and factory scrap projects.", "Line layout can be adapted to compact workshop space.", "Video machine testing helps buyers confirm configuration before shipment."]
+      "RFQ support for Vietnamese buyers comparing PP tape extrusion, circular loom, laminating and woven bag conversion suppliers.",
+    points: ["Vietnam buyers often compare complete lines and single machine upgrades.", "Factory space, labor plan and fabric width affect supplier recommendations.", "Machine test videos and shipment photos should be requested before order confirmation."]
   },
   {
     slug: "mexico",
     name: "Mexico",
-    title: "Plastic Recycling Machine Supplier for Mexico",
+    title: "PP Woven Sack Machine Suppliers for Mexico",
     description:
-      "Plastic washing, pelletizing and extrusion equipment for Mexican recycling businesses and plastic product manufacturers.",
-    points: ["Useful for PET bottle recycling, HDPE containers and film scrap.", "Voltage and control cabinet configuration should be confirmed early.", "English and Spanish sales materials can be prepared for your team."]
+      "Find China suppliers for Mexican woven sack factories producing cement bags, feed bags, agricultural bags and jumbo bags.",
+    points: ["Spanish sales material and clear technical sheets help supplier comparison.", "Voltage and after-sales response should be confirmed early.", "RFQs should include bag sample photos and target production volume."]
   },
   {
     slug: "middle-east",
     name: "Middle East",
-    title: "Plastic Recycling Machine for Middle East Buyers",
+    title: "Cement Bag and Woven Sack Machinery for Middle East Buyers",
     description:
-      "Plastic recycling equipment for buyers handling packaging waste, film, bottles, pipe scrap and production waste across Middle East markets.",
-    points: ["Heat, dust and water quality should be considered in plant planning.", "Washing line water treatment and drying performance matter.", "Spare parts planning is important for remote service locations."]
+      "Supplier matching for Middle East buyers sourcing cement valve bag, woven sack, FIBC and laminated packaging machinery from China.",
+    points: ["Cement and construction material packaging projects are common.", "Dust, heat and plant layout should be considered for line planning.", "Buyers should request spare parts lists and installation support terms."]
   }
 ];
 
 export const buyerScenarios = [
   {
-    name: "New Recycling Plant",
-    text: "For investors comparing PET bottle washing, film washing and pelletizing routes before buying a full line."
+    name: "New Woven Bag Factory",
+    text: "For buyers planning a complete PP woven bag plant and comparing tape extrusion, looms, printing, lamination and conversion machines."
   },
   {
-    name: "Factory Scrap Recovery",
-    text: "For plastic product factories that want to convert internal scrap into reusable flakes or pellets."
+    name: "Single Machine Upgrade",
+    text: "For existing factories replacing circular looms, adding lamination, improving printing, or increasing cutting and sewing capacity."
   },
   {
-    name: "Capacity Upgrade",
-    text: "For existing recyclers replacing single machines or expanding washing, drying and pelletizing capacity."
+    name: "Supplier Comparison",
+    text: "For overseas buyers who want multiple China suppliers to quote the same RFQ instead of contacting factories one by one."
   }
 ];
 
 export const faqs = [
-  ["How do I get an accurate quotation?", "Send material photos or videos, expected capacity, final product target and your country. Qunke can then recommend a line structure instead of quoting blindly."],
-  ["Can Qunke customize the line?", "Yes. Layout, power configuration, feeding method, washing stages, drying system and pelletizing route should be matched to the material and factory space."],
-  ["Can I see machine testing before shipment?", "Yes. A factory acceptance test video should be prepared before shipment, especially for complete washing and pelletizing lines."],
-  ["Do you provide installation support?", "The installation plan depends on the project. Remote guidance, documents and on-site support can be arranged after confirming the final line scope."],
-  ["What information should I send first?", "Material type, contamination level, moisture, target output, workshop size, local voltage and final product requirement."]
+  ["Is Qunke a machine manufacturer?", "Qunke is positioned as an RFQ and supplier matching platform. We help overseas buyers organize requirements and connect with relevant China PP woven bag machinery suppliers."],
+  ["What information should I submit first?", "Send bag type, bag size, target output, country, voltage, budget range if available, and photos of the final bag or fabric sample."],
+  ["Do I need to understand the full technical process?", "No. You can submit a simple RFQ. Suppliers can ask follow-up questions and provide technical configuration proposals."],
+  ["How are suppliers matched?", "RFQs are matched by machine category, application, target output, destination market and supplier capability. Early-stage matching can be handled manually."],
+  ["Can China suppliers join Qunke?", "Yes. Suppliers can contact Qunke to receive relevant RFQs for PP woven bag, sack, FIBC and plastic packaging machinery projects."]
 ];

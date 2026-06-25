@@ -1,6 +1,6 @@
 # Qunke Website
 
-Static English website for Qunke, a plastic recycling and extrusion machinery brand targeting overseas B2B buyers.
+Static English website for Qunke, a focused RFQ and supplier matching platform for overseas buyers sourcing PP woven bag, sack, tape extrusion, circular loom, laminating, printing and bag conversion machinery from China.
 
 ## Run Locally
 
@@ -33,6 +33,7 @@ Replace these items in `src/site-data.js`:
 - `site.email`
 - `site.whatsapp`
 - company address
-- product photos and videos
-- verified product specifications
-- real case studies
+- supplier onboarding rules
+- RFQ privacy and buyer consent text
+- real machine videos and supplier categories
+- valid lead pricing or supplier cooperation terms
